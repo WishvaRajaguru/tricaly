@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style/bootstrap.css" />
+    <link rel="stylesheet" href="../../style/admin_style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Tricaly | Administrator Panel</title>
+  </head>
+  <body class="container-fluid ">
+    <header class="header row d-flex align-items-center">
+      <div class="syd-menu-button">
+        <button class="syd-menu-btn">
+          <i class="bx bx-menu" style="color: #c3cad9"></i>
+        </button>
+      </div>
+      <div class="syd-menu">
+        <div class="row">
+          <div class="syd-menu-group col-md-4 col-lg-7 d-flex align-items-center">
+            <div class="row w-100 syd-menu-row d-flex align-items-center justify-content-start">
+              <h1 class="syd-menu-name col-md-12 col-lg-3 p-0 m-0">
+                Administrator Panel
+              </h1>
+              <div class="d-flex align-items-center col-lg-8 p-0 m-0 hide-md">
+                <ul class="syd-menu-inline p-0 m-0">
+                  <li><a href="">Dashboard</a></li>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">WebSite</a></li>
+                  <li><a href="">Terms</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="syd-menu-content col-md-8 col-lg-5">
+            <div class="row h-100 d-flex align-items-center justify-content-between">
+              <div class="col-md-8 col-lg-7 syd-menu-input-wrap">
+                <div class="syd-menu-input-icon"><i class='bx bx-search-alt-2' style='color:#adb8cc' ></i></div>
+                <input type="text" class="syd-menu-input" placeholder="Search Documents"/>
+              </div>
+              <div class="col-md-2 col-lg-3 d-flex flex-row align-items-center justify-content-end">
+                <div class="syd-menu-button">
+                  <button class="syd-menu-btn">
+                    <i class='bx bxs-bell' style='color:#c3cad9'></i>
+                  </button>
+                </div>
+                <div class="d-flex flex-row align-items-center pe-3">
+                  <div class="syd-menu-button ">
+                    <button class="syd-user-char-btn syd-bg-orange-light">
+                        <img src="../../resources/images/profile/defaults/user_man_avatar.jpg" class="syd-user-char-img" alt="">
+                    </button>
+                  </div>
+                  <span class="syd-user-name-nav">Hi,Adam</span> <!--maximum 20 cahr-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="syd-main-body row">
+        <div class="syd-side-bar col-12">
+          <div class="row h-100">
+            <div class="col-12 d-flex flex-column justify-content-start align-items-center" id="nav-tab" role="tablist">
+              <div class="syd-menu-button pt-4">
+                <button class="syd-menu-btn active" onclick="sideNavBtnClick(this);" id="nav-dashoboard-tab" data-bs-toggle="tab" data-bs-target="#nav-dashoboard" type="button" role="tab" aria-controls="nav-dashoboard" aria-selected="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="selected"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm3 13-8 2 2-8 8-2-2 8z"></path><circle cx="12" cy="12" r="2"></circle></svg>
+                </button>
+              </div>
+              <div class="syd-menu-button pt-3">
+                <button class="syd-menu-btn" onclick="sideNavBtnClick(this);" id="nav-newsupdate-tab" data-bs-toggle="tab" data-bs-target="#nav-newsupdate" type="button" role="tab" aria-controls="nav-newsupdate" aria-selected="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="default"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                </button>
+              </div>
+              <div class="syd-menu-button pt-3">
+                <button class="syd-menu-btn" onclick="sideNavBtnClick(this);" id="nav-msg-tab" data-bs-toggle="tab" data-bs-target="#nav-msg" type="button" role="tab" aria-controls="nav-msg" aria-selected="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="default"><path d="M12 3c-4.92 0-8.91 3.729-8.91 8.332 0 2.616 1.291 4.952 3.311 6.479V21l3.041-1.687c.811.228 1.668.35 2.559.35 4.92 0 8.91-3.73 8.91-8.331C20.91 6.729 16.92 3 12 3zm.938 11.172-2.305-2.394-4.438 2.454 4.865-5.163 2.305 2.395 4.439-2.455-4.866 5.163z"></path></svg>
+                </button>
+              </div>
+              <div class="syd-menu-button pt-3">
+                <button class="syd-menu-btn" onclick="sideNavBtnClick(this);" id="nav-world-tab" data-bs-toggle="tab" data-bs-target="#nav-world" type="button" role="tab" aria-controls="nav-world" aria-selected="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="default"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zM4 12c0-.899.156-1.762.431-2.569L6 11l2 2v2l2 2 1 1v1.931C7.061 19.436 4 16.072 4 12zm14.33 4.873C17.677 16.347 16.687 16 16 16v-1a2 2 0 0 0-2-2h-4v-3a2 2 0 0 0 2-2V7h1a2 2 0 0 0 2-2v-.411C17.928 5.778 20 8.65 20 12a7.947 7.947 0 0 1-1.67 4.873z"></path></svg>
+                </button>
+              </div>
+              <div class="syd-menu-button pt-3">
+                <button class="syd-menu-btn" onclick="sideNavBtnClick(this);" id="nav-stack-tab" data-bs-toggle="tab" data-bs-target="#nav-stack" type="button" role="tab" aria-controls="nav-stack" aria-selected="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="default"><path d="M22 7.999a1 1 0 0 0-.516-.874l-9.022-5a1.003 1.003 0 0 0-.968 0l-8.978 4.96a1 1 0 0 0-.003 1.748l9.022 5.04a.995.995 0 0 0 .973.001l8.978-5A1 1 0 0 0 22 7.999zm-9.977 3.855L5.06 7.965l6.917-3.822 6.964 3.859-6.918 3.852z"></path><path d="M20.515 11.126 12 15.856l-8.515-4.73-.971 1.748 9 5a1 1 0 0 0 .971 0l9-5-.97-1.748z"></path><path d="M20.515 15.126 12 19.856l-8.515-4.73-.971 1.748 9 5a1 1 0 0 0 .971 0l9-5-.97-1.748z"></path></svg>
+                </button>
+              </div>
+            </div>
+            <div class="col-12 d-flex flex-column justify-content-end align-items-center">
+              <div class="syd-menu-button pb-3">
+                <button class="syd-side-char-btn syd-bg-orange-light">
+                    <img src="../../resources/images/profile/defaults/user_man_avatar.jpg" class="syd-side-char-img" alt="">
+                </button>
+              </div>
+              <div class="syd-menu-button pb-3">
+                <button class="syd-side-char-btn syd-bg-blue-light">
+                  <img src="../../resources/images/profile/journalists/adam_pears_male_2023_12_14.jpg" class="syd-side-char-img" alt="">
+                </button>
+              </div>
+              <div class="syd-menu-button pb-3">
+                <button class="syd-side-char-btn syd-bg-pink-light">
+                  <img src="../../resources/images/profile/journalists/eva_pears_female_2023_12_14.jpg.jpg" class="syd-side-char-img" alt="">
+                </button>
+              </div>
+              <div class="syd-menu-button pb-3">
+                <button class="syd-side-char-btn syd-bg-green-light">
+                  <img src="../../resources/images/profile/journalists/rauly_john_female_2023_12_14.jpg" class="syd-side-char-img" alt="">
+                </button>
+              </div>
+              <div class="syd-menu-button pb-3">
+                <button class="syd-side-add-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);"><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"></path></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="syd-main-panel overflow-y-scroll">
+          <div class="tab-content" id="nav-tabContent">
+
+            <div class="tab-pane fade show active" id="nav-dashoboard" role="tabpanel" aria-labelledby="nav-dashoboard-tab" tabindex="0">
+
+              <div class="container-fluid">
+                <div class="row vh-100">
+                  <!-- cards -->
+                  <div class="col-12 col-lg-8 h-100">
+                    <div class="row row-cols-3">
+                      <div class="col-12 col-md-6 col-lg-4 px-4 py-3">
+                        <div class="row">
+                          <div class="col-12 syd-admin-dash-card card-bg-blue">
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4 px-4 py-3">
+                        <div class="row">
+                          <div class="col-12 syd-admin-dash-card card-bg-pink">
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4 px-4 py-3">
+                        <div class="row">
+                          <div class="col-12 syd-admin-dash-card card-bg-orange">
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- activity-table -->
+                  <div class="col-12 col-lg-4 h-100 bg-primary">
+
+                  </div>
+                  <!-- user-active-chart -->
+                  <!-- latest-content-table -->
+                </div>
+              </div>
+
+            </div>
+            
+            <div class="tab-pane fade" id="nav-newsupdate" role="tabpanel" aria-labelledby="nav-newsupdate-tab" tabindex="0">newsupdate</div>
+            <div class="tab-pane fade" id="nav-msg" role="tabpanel" aria-labelledby="nav-msg-tab" tabindex="0">msg</div>
+            <div class="tab-pane fade" id="nav-world" role="tabpanel" aria-labelledby="nav-world-tab" tabindex="0">world</div>
+            <div class="tab-pane fade" id="nav-stack" role="tabpanel" aria-labelledby="nav-stack-tab" tabindex="0">stack</div>
+          </div>
+        </div>
+    </main>
+
+    <script src="../../script/bootstrap.bundle.js"></script>
+    <script src="../../script/script.js"></script>
+  </body>
+</html>

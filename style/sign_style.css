@@ -1,0 +1,205 @@
+:root {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  --var-font-Montserrat: "Montserrat";
+  --var-font-Montserrat_subraya: "Montserrat_subraya";
+}
+
+.tricaly-name {
+  font-family: var(--var-font-Montserrat_subraya);
+  font-size: 2.1rem;
+}
+
+.tricaly-slogan {
+  font-family: var(--var-font-Montserrat);
+  font-size: 0.65rem;
+}
+
+.font-Montserrat {
+  font-family: var(--var-font-Montserrat);
+}
+
+.font-size-8 {
+  font-size: 0.8rem;
+}
+
+.font-size-7 {
+  font-size: 0.65rem;
+}
+
+.color-gray {
+  color: gray;
+}
+
+::placeholder {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.signinbg {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../resources/drops/signin/bg_signin.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.max-body{
+    height: 100vh;
+    width: 100vw;
+}
+
+/* sm */
+@media(max-width: 992px){
+    .bg-main {
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0.2) 0%,
+          rgba(255, 255, 255, 0.5) 15%,
+          rgba(255, 255, 255, 1) 50%,
+          rgba(255, 255, 255, 0.5) 85%,
+          rgba(255, 255, 255, 0.2) 100%
+        );
+      }
+      .btn-show-password{
+        margin-left: 21rem;
+      }
+      .p-up{
+        margin-left: 21.5rem;
+      }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .btn-show-password{
+    margin-left: 21.5rem;
+  }
+  .p-up{
+    margin-left: 22rem;
+  }
+}
+
+/* lg */
+@media(min-width: 992px){
+    .bg-main {
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0.1) 0%,
+          rgba(255, 255, 255, 0.5) 25%,
+          rgba(255, 255, 255, 1) 50%,
+          rgba(255, 255, 255, 0.5) 75%,
+          rgba(255, 255, 255, 0.1) 100%
+        );
+      }
+      .btn-show-password{
+        margin-left: 22.5rem;
+      }
+      .p-in{
+        margin-left: 21.5rem;
+      }
+}
+
+.alert-box{
+    width: 80%;
+    height: auto;
+    padding: 8px 10px 9px 10px;
+}
+
+.alert-box-wrap{
+    max-width: 500px;
+}
+
+.text-feld1 {
+  height: 38px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 5px -3px rgba(0, 0, 0, 0.25);
+  padding: 0px 15px 0px 15px;
+  font-size: 0.8rem;
+}
+
+.text-feld1:focus{
+  border-style: solid;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.signinbutton {
+  height: 40px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  box-shadow: 0px 2px 5px -3px rgba(0, 0, 0, 0.25);
+}
+
+.ordiv {
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.btn-continue {
+  height: 40px;
+  color: #000000;
+  background-color: #ffffff;
+  border-style: none;
+  border-width: 0;
+  box-shadow: 0px 2px 5px -3px rgba(0, 0, 0, 0.25);
+}
+
+.btn-continue.google:hover, .btn-continue.facebook:hover{
+    background-color: #f2fbfe;
+}
+
+.btn-continue.apple:hover{
+    background-color: #f2fef9;
+}
+
+.logosixe {
+  height: 18px;
+}
+
+.logoBtnText {
+  font-family: var(--var-font-Montserrat);
+  font-size: 0.8rem;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  appearance: textfield;
+}
+
+.btn-show-password{
+  height: 38px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  border-style: none;
+  border-width: 0px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.btn-show-password i{
+  position: relative;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../resources/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat_subraya";
+  src: url("../resources/fonts/MontserratSubrayada-Regular.ttf");
+}
